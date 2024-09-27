@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión de Prácticas Preprofesionales</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#registro-estudiantes">Registro de Estudiantes</a></li>
+        <li><a href="#registro-practicas">Registro de Prácticas</a></li>
+        <li><a href="#revision-profesores">Revisión de Prácticas</a></li>
+        <li><a href="#validacion-empresas">Validación de Empresas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="registro-estudiantes">
+      <h2>Registro de Estudiantes</h2>
+      <form action="https://example.com/registro-estudiantes" method="post" target="_blank" onsubmit="enviarFormulario('Registro con éxito')">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula" name="matricula" required>
+        <br><br>
+        <label for="carrera">Carrera:</label>
+        <input type="text" id="carrera" name="carrera" required>
+        <br><br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br><br>
+        <input type="submit" value="Registrar">
+      </form>
+    </section>
+    <section id="registro-practicas">
+      <h2>Registro de Prácticas</h2>
+      <form action="https://example.com/registro-practicas" method="post" target="_blank" onsubmit="enviarFormulario('Registro de práctica con éxito')">
+        <label for="nombre-empresa">Nombre de la empresa:</label>
+        <input type="text" id="nombre-empresa" name="nombre-empresa" required>
+        <br><br>
+        <label for="descripcion-tareas">Descripción de las tareas:</label>
+        <textarea id="descripcion-tareas" name="descripcion-tareas" required></textarea>
+        <br><br>
+        <label for="horas-trabajadas">Cantidad de horas trabajadas:</label>
+        <input type="number" id="horas-trabajadas" name="horas-trabajadas" required>
+        <br><br>
+        <label for="fecha-inicio">Fecha de inicio:</label>
+        <input type="date" id="fecha-inicio" name="fecha-inicio" required>
+        <br><br>
+        <input type="submit" value="Registrar">
+      </form>
+    </section>
+    <!-- Sección para la revisión de prácticas -->
+    <section id="revision-profesores">
+      <h2>Revisión de Prácticas</h2>
+        <form action="https://example.com/revision-practicas" method="post" target="_blank" onsubmit="enviarFormulario('Revisión de práctica con éxito')">
+      <!-- Contenido de la sección -->
+    </section>
+    <!-- Sección para la validación de empresas -->
+    <section id="validacion-empresas">
+      <h2>Validación de Empresas</h2>
+      <form action="https://example.com/validacion-empresas" method="post" target="_blank" onsubmit="enviarFormulario('Validación con éxito')">
+        <input type="submit" value="Validar">
+      </form>
+      <!-- Contenido de la sección -->
+    </section>
+  </main>
+
+</body>
+</html>
